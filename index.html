@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rjay Construction And Interior Design Limited - Building Dreams, Designing Life</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://hips.hearstapps.com/hmg-prod/images/lantern-exterior-6-641b0ae6730ae.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .section-divider {
+            background: linear-gradient(90deg, transparent, #000, transparent);
+            height: 1px;
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .portfolio-item {
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-white text-black scroll-smooth">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <i class="fas fa-hammer text-2xl mr-3"></i>
+                    <span class="text-xl font-bold">Rjay Construction & Interior Design</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-gray-600 transition">Home</a>
+                    <a href="#about" class="hover:text-gray-600 transition">About</a>
+                    <a href="#services" class="hover:text-gray-600 transition">Services</a>
+                    <a href="#portfolio" class="hover:text-gray-600 transition">Portfolio</a>
+                    <a href="#contact" class="hover:text-gray-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-2xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="#home" class="block py-2 hover:text-gray-600 transition">Home</a>
+                <a href="#about" class="block py-2 hover:text-gray-600 transition">About</a>
+                <a href="#services" class="block py-2 hover:text-gray-600 transition">Services</a>
+                <a href="#portfolio" class="block py-2 hover:text-gray-600 transition">Portfolio</a>
+                <a href="#contact" class="block py-2 hover:text-gray-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-white">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Building Dreams,<br>Designing Life</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto px-4">We specialise in bringing spaces to life whether it's constructing strong, lasting buildings or designing interiors that reflect comfort, elegance, and modern taste.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#services" class="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Our Services</a>
+                <a href="#contact" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition">Get Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">About Rjay Construction & Interior Design</h2>
+                <div class="section-divider w-24 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Located in Nigeria, we are a premier construction and interior design company committed to excellence in every project we undertake.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Our Expertise</h3>
+                    <p class="text-gray-600 mb-6">From residential to commercial projects, we provide end-to-end solutions that blend creativity with structural excellence. Our team of skilled professionals ensures every detail meets the highest standards of quality and craftsmanship.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-black">50+</div>
+                            <div class="text-sm text-gray-600">Projects Completed</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-black">100%</div>
+                            <div class="text-sm text-gray-600">Client Satisfaction</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-black">5+</div>
+                            <div class="text-sm text-gray-600">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-black">24/7</div>
+                            <div class="text-sm text-gray-600">Support</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://buildingpractice.biz/wp-content/uploads/2020/12/Building-Design-Idea-for-Residential-Homes-in-Nigeria.png" alt="Modern Nigerian Architecture" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Our Services</h2>
+                <div class="section-divider w-24 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Comprehensive construction and design solutions tailored to your needs</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="service-card bg-gray-50 p-8 rounded-lg text-center shadow-lg">
+                    <div class="text-4xl mb-4">
+                        <i class="fas fa-hammer text-black"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Construction Services</h3>
+                    <p class="text-gray-600">Complete construction solutions from foundation to finishing, ensuring structural integrity and quality craftsmanship.</p>
+                </div>
+                <div class="service-card bg-gray-50 p-8 rounded-lg text-center shadow-lg">
+                    <div class="text-4xl mb-4">
+                        <i class="fas fa-palette text-black"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Interior Design & Space Planning</h3>
+                    <p class="text-gray-600">Creating beautiful, functional spaces that reflect your style and maximize the potential of every room.</p>
+                </div>
+                <div class="service-card bg-gray-50 p-8 rounded-lg text-center shadow-lg">
+                    <div class="text-4xl mb-4">
+                        <i class="fas fa-home text-black"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Home Remodeling & Renovation</h3>
+                    <p class="text-gray-600">Transform your existing space with our comprehensive remodeling and renovation services.</p>
+                </div>
+                <div class="service-card bg-gray-50 p-8 rounded-lg text-center shadow-lg">
+                    <div class="text-4xl mb-4">
+                        <i class="fas fa-clipboard-list text-black"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Project Management & Supervision</h3>
+                    <p class="text-gray-600">Professional oversight ensuring projects are completed on time, within budget, and to specification.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Our Portfolio</h2>
+                <div class="section-divider w-24 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Showcasing our expertise in construction and interior design</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://african.land/oc-content/plugins/blog/img/blog/970.jpg" alt="Commercial Building Construction" class="w-full h-64 object-cover transition-transform">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Commercial Building Construction</h3>
+                        <p class="text-gray-600">Modern commercial building with contemporary design elements.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://brabbu.com/blog/wp-content/uploads/2023/09/BRABBU-Living-Room16.jpg" alt="Luxury Interior Design" class="w-full h-64 object-cover transition-transform">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Luxury Interior Design</h3>
+                        <p class="text-gray-600">Elegant living space with modern luxury finishes and sophisticated design.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://www.homebunch.com/wp-content/uploads/2019/01/Before-and-After-Kitchen-Renovation.jpg" alt="Kitchen Renovation" class="w-full h-64 object-cover transition-transform">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Kitchen Renovation</h3>
+                        <p class="text-gray-600">Complete kitchen transformation with modern appliances and elegant design.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://lookaside.fbsbx.com/lookaside/crawler/threads/C7Us6N6txOD/0/image.jpg" alt="Residential Complex" class="w-full h-64 object-cover transition-transform">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Residential Complex</h3>
+                        <p class="text-gray-600">Contemporary terraced houses with modern architectural design.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://www.caffelattehome.com/img/inspirations/luxury-and-elegance-in-modern-living-room-design/luxury-and-elegance-in-modern-living-room-design.jpg" alt="Modern Living Room" class="w-full h-64 object-cover transition-transform">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Modern Living Room Design</h3>
+                        <p class="text-gray-600">Sophisticated living space with contemporary furniture and elegant aesthetics.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://www.contemporist.com/wp-content/uploads/2022/05/mid-century-modern-house-remodel-060522-105-01.jpg" alt="House Remodel" class="w-full h-64 object-cover transition-transform">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Complete House Remodel</h3>
+                        <p class="text-gray-600">Mid-century modern home transformation with contemporary updates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Our Team</h2>
+                <div class="section-divider w-24 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Skilled professionals dedicated to bringing your vision to life</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <img src="https://c8.alamy.com/comp/A24FHX/construction-workers-in-nigeria-A24FHX.jpg" alt="Construction Team" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Construction Team</h3>
+                    <p class="text-gray-600">Experienced construction professionals ensuring quality workmanship on every project.</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://www.shutterstock.com/image-photo/male-african-construction-worker-using-600nw-1961527324.jpg" alt="Project Management" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Project Managers</h3>
+                    <p class="text-gray-600">Dedicated project managers ensuring timely delivery and quality control.</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://cdn.guardian.ng/wp-content/uploads/2015/03/0918-construction-site-pixshark-897x598.jpg" alt="Design Team" class="w-full h-64 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Design Team</h3>
+                    <p class="text-gray-600">Creative designers who transform spaces into beautiful, functional environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-black text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+                <div class="bg-white h-px w-24 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto">Ready to start your project? Contact us today for a consultation</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-white mr-4 text-xl"></i>
+                            <span>Lagos, Nigeria</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-white mr-4 text-xl"></i>
+                            <span>+234 (0) 800 000 0000</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-white mr-4 text-xl"></i>
+                            <span>info@rjayconstruction.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-white mr-4 text-xl"></i>
+                            <span>Mon - Fri: 8:00 AM - 6:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="text-xl font-semibold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-2xl hover:text-gray-300 transition"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-2xl hover:text-gray-300 transition"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-2xl hover:text-gray-300 transition"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-2xl hover:text-gray-300 transition"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-white focus:outline-none">
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-white focus:outline-none">
+                        </div>
+                        <input type="text" placeholder="Subject" class="w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-white focus:outline-none">
+                        <textarea rows="5" placeholder="Your Message" class="w-full px-4 py-3 rounded-lg bg-gray-800 text-white border border-gray-700 focus:border-white focus:outline-none"></textarea>
+                        <button type="submit" class="w-full bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-hammer text-2xl mr-3"></i>
+                        <span class="text-xl font-bold">Rjay Construction</span>
+                    </div>
+                    <p class="text-gray-400">Building dreams and designing life across Nigeria with quality construction and interior design services.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Construction Services</li>
+                        <li>Interior Design</li>
+                        <li>Home Renovation</li>
+                        <li>Project Management</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition">About</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Services</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe to get updates on our latest projects and offers.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your Email" class="flex-1 px-4 py-2 rounded-l-lg bg-gray-800 text-white border border-gray-700 focus:outline-none">
+                        <button class="bg-white text-black px-4 py-2 rounded-r-lg font-semibold hover:bg-gray-100 transition">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Rjay Construction And Interior Design Limited. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+
+        // Newsletter subscription
+        document.querySelector('footer form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for subscribing to our newsletter!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
